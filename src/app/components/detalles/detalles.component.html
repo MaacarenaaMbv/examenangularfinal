@@ -1,0 +1,15 @@
+<div *ngIf="cubo">
+    <a routerLink="/" class="btn btn-info">Back To Home</a>
+    <a  [routerLink]="'/cubos/' + cubo.marca" class="btn btn-success">Back</a>
+    <div class="card" style="width: 18rem; margin: 0 auto;">
+        <img [src]="cubo.imagen" style="width: 200px; height: 200px;"/>
+        <h4>Cubo: {{cubo.nombre}}</h4>
+        <h2>Modelo: {{ cubo.modelo }}</h2>
+        <h2>Marca: {{ cubo.marca }}</h2>
+        <h2>Color: {{ cubo.color }}</h2>
+        <h2>Precio: {{ cubo.precio }}</h2>
+        <h2>Valoracion: {{ cubo.valoracion }}</h2>
+    </div>
+</div>
+
+  

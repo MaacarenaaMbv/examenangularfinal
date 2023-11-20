@@ -1,0 +1,11 @@
+<form #insertForm="ngForm">
+    <label>Email: </label>
+    <input type="text" class="form-control" 
+        #cajaEmail name="cajaEmail"/>
+    <label>Contraseña</label>
+    <input type="password" class="form-control" 
+        #cajaContrasenia name="cajaContrasenia"/>
+   <button class="btn btn-info" (click)="inicioUsuario()">
+        Iniciar Sesión
+    </button>
+</form>
